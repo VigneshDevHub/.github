@@ -84,7 +84,7 @@ VigneshDevHub thrives on collaboration! Here's how you can get involved:
 
 Becoming a member of VigneshDevHub is simple! Follow these steps to join us:
 
-1\. **Raise an Issue**: Go to our [GitHub repository](#) and raise an issue titled "Request to Join VigneshDevHub."
+1\. **Raise an Issue**: Raise an issue titled "Request to Join VigneshDevHub" [Here](https://github.com/VigneshDevHub/.github/issues/new?assignees=&labels=join+request&projects=&template=request_to_join.md&title=Request+to+Join+VigneshDevHub) .
 
 2\. **Introduce Yourself**: In the issue description, provide a brief introduction about yourself, including your interests, experience, and what you hope to contribute to the community.
 
