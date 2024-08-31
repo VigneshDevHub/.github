@@ -1,0 +1,26 @@
+name: Invite to Organization
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  invite:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check if issue is a join request
+      if: contains(github.event.issue.title, 'Request to Join VigneshDevHub')
+      run: echo "Request to join detected. Proceeding with invite."
+      
+    - name: Send organization invite
+      if: contains(github.event.issue.title, 'Request to Join VigneshDevHub')
+      env:
+        GH_ORG_INVITE_TOKEN: ${{ secrets.GH_ORG_INVITE_TOKEN }}
+        GH_ORG: VigneshDevHub
+        ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+      run: |
+        curl -X PUT \
+          -H "Authorization: token $GH_ORG_INVITE_TOKEN" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/orgs/$GH_ORG/memberships/$ISSUE_AUTHOR \
+          -d '{"role":"member"}'
