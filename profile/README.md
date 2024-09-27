@@ -3,6 +3,9 @@
     <img src="https://vignesh025.github.io/VigneshDevHub-video/VigneshDevHub.gif" />
     <h6> This is a place where connections are made and collaboration thrives! Join us in a vibrant community dedicated to learning and contributing to open-source. Whether you're just starting out or a seasoned pro, there's space for everyone to grow, share, and make a meaningful impact together. <h6>
     <p> Make Pull Requests, open Issues, share ideas, help each other and make improvements!</p>
+    <a href="https://discord.gg/sFYFqJUnQv">
+        <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
+    </a>
 </div>
 
 ---
